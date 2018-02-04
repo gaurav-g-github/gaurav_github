@@ -1,0 +1,41 @@
+#%RAML 0.8
+#baseUri: https://mocksvc.mulesoft.com/mocks/52840f25-e604-4323-957b-14a72b4793e9
+baseUri: https://mocksvc.mulesoft.com/mocks/cd543b00-87d1-4c49-a88a-903f39820343
+title: American Flights API
+version: 1.0
+
+/flights:
+  get:
+    queryParameters: 
+      code:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: |
+              [{"ID": 1,"code": "GQ574","price": 399,"departureDate": "2016/12/20","origin": "ORD","destination": "SFO","emptySeats": 200,"plane": {"type": "Boeing 747", "totalSeats": 400}},{"ID": 2,"code": "GQ574","price": 399,"departureDate": "2016/12/20","origin": "ORD","destination": "SFO","emptySeats": 200,"plane": {"type": "Boeing 747", "totalSeats": 400}}]
+            
+  post:
+    body:
+      application/json:
+        example: |
+          {"code": "GQ574","price": 399,"departureDate": "2016/12/20","origin": "ORD","destination": "SFO","emptySeats": 200,"plane": {"type": "Boeing 747", "totalSeats": 400}}
+    responses:
+      201:
+        body:
+          application/json:
+            example: |
+              {"message":"flights added but not really"}
+            
+            
+  
+  /{ID}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {"code": "GQ574","price": 399,"departureDate": "2016/12/20","origin": "ORD","destination": "SFO","emptySeats": 200,"plane": {"type": "Boeing 747", "totalSeats": 400}}
+            
+    
