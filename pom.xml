@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mulesoft</groupId>
-	<artifactId>apidev-american-ws</artifactId>
+	<artifactId>apidev-american-ws-gauravg2</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule</packaging>
 	<name>Mule apidev-american-ws Application</name>
