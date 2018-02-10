@@ -49,6 +49,9 @@
 								<resource>
 									<directory>mappings/</directory>
 								</resource>
+								<resource>
+									<directory>src/main/resources/</directory>
+								</resource>
 							</resources>
 						</configuration>
 					</execution>
