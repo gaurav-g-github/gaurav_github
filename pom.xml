@@ -70,7 +70,6 @@
 					<targetType>cluster</targetType>
 					<environment>Sandbox</environment>
 				</configuration>
-
 				<executions>
 					<execution>
 						<id>deploy</id>
